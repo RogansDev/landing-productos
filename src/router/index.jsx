@@ -3,6 +3,14 @@ import { BrowserRouter, Routes, Route, createBrowserRouter } from 'react-router-
 import Elixir from '../pages/products/Elixir';
 import Home from '../pages/home/Home';
 import LayoutRoot from '../layout/LayoutRoot';
+import ElixirModal from '../pages/modals/Elixir';
+import GetUpModal from '../pages/modals/GetUp';
+import GetUp from '../pages/products/GetUp';
+import Renew from '../pages/products/Renew';
+import RenewModal from '../pages/modals/Renew';
+import TonicModal from '../pages/modals/Tonic';
+import Tonic from '../pages/products/Tonic';
+
 
 
 export const router = createBrowserRouter([
@@ -13,6 +21,38 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />
+            },
+            {
+                path: '/ElixirModal',
+                element: <ElixirModal />
+            },
+            {
+                path: '/Elixir',
+                element: <Elixir />
+            },
+            {
+                path: '/GetupModal',
+                element: <GetUpModal />
+            },
+            {
+                path: '/Getup',
+                element: <GetUp />
+            },
+            {
+                path: '/RenewModal',
+                element: <RenewModal />
+            },
+            {
+                path: '/Renew',
+                element: <Renew />
+            },
+            {
+                path: '/TonicModal',
+                element: <TonicModal />
+            },
+            {
+                path: '/Tonic',
+                element: <Tonic />
             }
         ]
     }
