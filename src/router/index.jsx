@@ -11,6 +11,7 @@ import RenewModal from '../pages/modals/Renew';
 import TonicModal from '../pages/modals/Tonic';
 import Tonic from '../pages/products/Tonic';
 import GetUpItems from '../pages/ProductDetails/GetUpItems';
+import RenewItems from '../pages/ProductDetails/RenewItems';
 
 
 
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
             {
                 path: '/Renew',
                 element: <Renew />
+            },
+            {
+                path: '/RenewDetails',
+                element: <RenewItems />
             },
             {
                 path: '/TonicModal',
