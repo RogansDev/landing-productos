@@ -10,6 +10,7 @@ import Renew from '../pages/products/Renew';
 import RenewModal from '../pages/modals/Renew';
 import TonicModal from '../pages/modals/Tonic';
 import Tonic from '../pages/products/Tonic';
+import GetUpItems from '../pages/ProductDetails/GetUpItems';
 
 
 
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
             {
                 path: '/GetupModal',
                 element: <GetUpModal />
+            },
+            {
+                path: '/GetupDetails',
+                element: <GetUpItems />
             },
             {
                 path: '/Getup',

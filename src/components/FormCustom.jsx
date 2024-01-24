@@ -2,6 +2,8 @@ import React from "react";
 import ButtomComponent from "./ButtomComponent";
 import InputCustom from "./InputCustom";
 import { Link } from "react-router-dom";
+import dateBirthdata from './DateBirthdata';
+
 
 const FormCustom = () => {
   return (
@@ -24,13 +26,11 @@ const FormCustom = () => {
             name="nombre"
             placeholder="Celular / Telefono (Requerido) "
             required
-            
           />
           <InputCustom
             name="nombre"
-            placeholder="Ingresa Fecha de nacimiento"
+            placeholder="Ingresa tu fecha de nacimiento "
             required
-            
           />
           <div className="flex items-center gap-2 mb-2 mt-2">
             <input type="checkbox" name="" id="" className="w-4 h-4" />
