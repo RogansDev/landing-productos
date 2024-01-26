@@ -138,7 +138,10 @@ const Elixir = () => {
           </section>
           {/* sobre mas informacion */}
           <section className="flex items-center justify-around gap-7">
-            <Link className="flex items-center justify-center gap-2">
+            <Link 
+               to="/"
+               className="flex items-center justify-center gap-2"
+            >
               <svg
                 width="20"
                 height="20"
@@ -161,7 +164,9 @@ const Elixir = () => {
               </svg>
               <p>¿Tienes dudas?</p>
             </Link>
-            <Link className="flex items-center justify-center gap-2">
+            <Link 
+                to="/"
+                className="flex items-center justify-center gap-2">
               <svg
                 width="20"
                 height="20"

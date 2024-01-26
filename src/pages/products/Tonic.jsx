@@ -160,7 +160,7 @@ const Tonic = () => {
             </svg>
             <p>¿Tienes dudas?</p>
           </Link>
-          <Link className="flex items-center justify-center gap-2">
+          <Link to='/TonicItems' className="flex items-center justify-center gap-2">
             <svg
               width="20"
               height="20"

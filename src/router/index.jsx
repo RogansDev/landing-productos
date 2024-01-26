@@ -12,6 +12,7 @@ import TonicModal from '../pages/modals/Tonic';
 import Tonic from '../pages/products/Tonic';
 import GetUpItems from '../pages/ProductDetails/GetUpItems';
 import RenewItems from '../pages/ProductDetails/RenewItems';
+import TonicItems from '../pages/ProductDetails/TonicItems';
 
 
 
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
             {
                 path: '/Tonic',
                 element: <Tonic />
+            },
+            {
+                path: '/TonicItems',
+                element: <TonicItems />
             }
         ]
     }

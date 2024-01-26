@@ -1,25 +1,13 @@
 import React from "react";
-import Banner from "../../../public/img/renew2.jpg";
-import Renew from "../../../public/img/renewTwo.jpg";
-import Hombre from "../../../public/img/hombre.jpg";
-import PurpleRenew from "../../../public/img/renew-medium.jpg";
-import Acordeon from "../../components/Accordion";
+import Banner from "../../../public/img/tonicbanner.jpg";
+import Second from "../../../public/img/tonic-items.jpg";
+import Expant from "../../../public/img/bannertonic.jpg";
+import ScreenFirst from "../../../public/img/cuadrotonic1.jpg";
+import ScreenSecond from "../../../public/img/cuadrotonic2.jpg";
+import ScreenThrid from "../../../public/img/cuadrotonic3.jpg";
+import DetailPart from "../../../public/img/tonicfooter.jpg";
 
-const RenewItems = () => {
-
-  const secciones = [
-    { titulo: "¿Cómo funcionan estos remedios?", contenido: "Contenido de la sección 1..." },
-    { titulo: "¿Son seguros de usar?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Cuánto tiempo tardan en hacer efecto?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Son necesarios para todas las personas?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Pueden interactuar con otros medicamentos?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Son efectivos para todos los tipos de disfunción sexual?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Cuáles son los efectos secundarios comunes?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Se pueden tomar a largo plazo?", contenido: "Contenido de la sección 2..." },
-    { titulo: "¿Pueden mejorar la calidad de las relaciones sexuales?", contenido: "Contenido de la sección 2..." },
-    
-  ];
-
+const TonicItems = () => {
   return (
     <div className="flex flex-col h-auto p-5 overflow-hidden">
       {/* header */}
@@ -64,18 +52,17 @@ const RenewItems = () => {
               />
             </svg>
           </article>
+          {/* titulo */}
           <article className="relative bottom-16">
-            <h3 className="mb-2 text-gray-700">
-              Shampoo anti canas / anti caída
-            </h3>
-            <h1 className="uppercase font-semibold tracking-wider text-primary-20 text-5xl mb-2">
-              Renew
+            <h3 className="mb-2 text-gray-700">Loción Minoxidil (spray)</h3>
+            <h1 className="uppercase font-semibold tracking-wider text-secondary-50 text-5xl mb-2">
+              Tonic
             </h1>
-            <p className="text-2xl text-black font-semibold mb-8">
-              Combate el cabello gris y <br /> promueve la pigmentación <br />{" "}
-              del cabello
-            </p>
-            <button className="bg-black text-white flex items-center gap-2 py-3 px-5 rounded-lg">
+            <span className="text-2xl text-gray-500 font-medium">
+              Mejora el crecimiento capilar <br /> sin resecarlo gracias <br />{" "}
+              a extractos naturales
+            </span>
+            <button className="bg-black text-white flex items-center gap-2 py-3 px-5 rounded-lg relative top-8">
               <svg
                 width="21"
                 height="20"
@@ -152,13 +139,9 @@ const RenewItems = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              Agenda tu asesoría medica virtual gratis
+              Agenda tu cita gratis
             </button>
-            <p className="text-end text-[11px] relative top-[4rem] right-[9rem]">
-              AUMENTA TU CONFIANZA, <br /> Con un producto natural <br /> Libre
-              de contraindicaciones y efectos <br /> químicos secundarios INVIMA{" "}
-              <br /> No Registro: RSA-0026558-2023
-            </p>
+
             <button className="bg-black text-white flex items-center gap-2 py-2 px-12 rounded-lg relative left-[30rem] top-[6rem]">
               <svg
                 width="21"
@@ -240,6 +223,7 @@ const RenewItems = () => {
             </button>
           </article>
         </section>
+        {/* banner primario*/}
         <section className="flex items-center p-5 w-[50%]">
           <article>
             <img src={Banner} alt="" />
@@ -247,193 +231,93 @@ const RenewItems = () => {
           <article></article>
         </section>
       </div>
-      {/* medium */}
-      <div className="flex flex-col items-center justify-center gap-4 mb-8">
-        <section className="flex flex-col  items-center gap-4 mb-4">
-          <h2 className="text-3xl text-center font-medium text-primary-30">
-            Además de aportar al <br /> crecimiento del pelo
-          </h2>
-          <p className="w-[35rem] text-primary-30">
-            La fórmula de Rogans Renew contiene minoxidil por lo que ayuda al
-            crecimiento capilar a la par que disminuye la aparición de canas
+      {/* seccion de producto */}
+      <div className="flex items-center relative left-[10rem] mb-2">
+        <article className="w-[50%]">
+          <img src={Second} alt="" className="object-cover" />
+        </article>
+        <article className="w-[50%]">
+          <h1 className="text-4xl font-medium text-secondary-50 mb-8">
+            ¿Qué es Rogans <br /> Tonic?
+          </h1>
+          <p className="w-[25rem]">
+            Rogans Tonic es una fórmula creada para aportar al crecimiento
+            capilar de hombres y mujeres con Minoxidil como su principal activo,
+            además de otros ingredientes naturales que ayudan a la hidratación
+            de la fibra capilar.
           </p>
+        </article>
+      </div>
+      {/* seccion de segundo banner  */}
+      <div className="mx-auto p-5 relative">
+        <img src={Expant} alt="" className="object-cover" />
+        <div>
+          <h2 className="relative bottom-[10rem] left-[3rem] text-4xl text-white font-medium">
+            Solución natural para <br /> un cabello saludable <br /> Rogans
+            Tonic
+          </h2>
+        </div>
+      </div>
+      {/* seccion de fotos */}
+      <div className="flex items-center gap-4 p-5 relative bottom-[4rem] m-5">
+        <section className="relative ">
+          <img src={ScreenFirst} alt="" />
+          <h2 className="absolute bottom-9 left-7 text-white text-2xl font-400">
+            Estimula los folículos <br /> pilosos
+          </h2>
         </section>
-        <section>
-          <img src={Renew} alt="" />
+        <section className="relative">
+          <img src={ScreenSecond} alt="" />
+          <h2 className="absolute bottom-9 left-7 text-white text-2xl font-400">
+            Promoviendo un crecimiento <br /> más rápido y sano
+          </h2>
+        </section>
+        <section className="relative">
+          <img src={ScreenThrid} alt="" />
+          <h2 className="absolute bottom-9 left-7 text-white text-2xl font-400">
+            Protege el cabello de agentes contaminantes
+          </h2>
         </section>
       </div>
-      {/* footer */}
-      <div className="flex flex-col items-center gap-4 p-5">
-        <section className="flex items-center gap-4 ">
-          <article className="w-[18rem] h-[10rem]">
-            <h2 className="text-3xl font-medium text-primary-30">
-              ¿Por que <br /> Renew?
-            </h2>
-          </article>
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem] ">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              Profundizar el color <br /> original del cabello
-            </p>
-          </article>
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem]">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              Prevenir el <br /> efecto raíz
-            </p>
-          </article>
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem]">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              Mantiene la <br /> repigmentación del <br /> cabello
-            </p>
-          </article>
-        </section>
-        <section className="flex items-center gap-4 mb-6">
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem]">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              Reactiva la función de <br /> los melanocitoso
-            </p>
-          </article>
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem]">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              protege el folículo del <br /> estrés oxidativo
-            </p>
-          </article>
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem]">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              estimula la producción <br /> de melanina
-            </p>
-          </article>
-          <article className="flex flex-col pt-5 items-center gap-4 w-[18rem] h-[10rem]">
-            <svg
-              width="35"
-              height="34"
-              viewBox="0 0 35 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M17.4997 2.8335C9.69384 2.8335 3.33301 9.19433 3.33301 17.0002C3.33301 24.806 9.69384 31.1668 17.4997 31.1668C25.3055 31.1668 31.6663 24.806 31.6663 17.0002C31.6663 9.19433 25.3055 2.8335 17.4997 2.8335ZM24.2713 13.7418L16.2388 21.7743C16.0405 21.9727 15.7713 22.086 15.488 22.086C15.2047 22.086 14.9355 21.9727 14.7372 21.7743L10.728 17.7652C10.3172 17.3543 10.3172 16.6743 10.728 16.2635C11.1388 15.8527 11.8188 15.8527 12.2297 16.2635L15.488 19.5218L22.7697 12.2402C23.1805 11.8293 23.8605 11.8293 24.2713 12.2402C24.6822 12.651 24.6822 13.3168 24.2713 13.7418Z"
-                fill="#C2B9FF"
-              />
-            </svg>
-            <p className="text-xl font-medium text-center">
-              estimula la producción <br /> de melanina
-            </p>
-          </article>
-        </section>
-        <section className="relative flex flex-col mb-20">
-          <img src={Hombre} alt="" />
-          <section className="absolute bottom-20 left-10 flex flex-col gap-4 text-white">
-            <h2 className="text-3xl font-medium text-white">
-              La formula rogans <br /> Renew
-            </h2>
-            <p>
-              Reduce activa y significativamente el cabello <br /> gris con
-              efectos a largo plazo
-            </p>
+      {/* COMO FUNCIONA */}
+      <div className="flex items-center mx-auto p-5">
+        <section className="w-[50%] pl-12">
+          <h2 className="text-4xl font-semibold text-secondary-50 mb-20">
+            ¿Cómo funciona Rogans <br /> Tonic?
+          </h2>
+          <section className="flex items-center gap-3 mb-6">
+            <article className="flex flex-col gap-2 ">
+              <h2 className="text-2xl font-medium">Paso 01</h2>
+              <p className="">
+                Aplicar SHAMPOO ROGANS ELIXIR sobre el cuero cabelludo húmedo{" "}
+              </p>
+            </article>
+            <article className="flex flex-col gap-2">
+              <h2 className="text-2xl font-medium">Paso 02</h2>
+              <p>
+                Masajear suavemente y permitir que actué durante 3 minutos.{" "}
+              </p>
+            </article>
+          </section>
+          {/* seccion 2*/}
+          <section className="flex items-center ">
+            <article className="flex flex-col gap-2">
+              <h2 className="text-2xl font-medium">Paso 03</h2>
+              <p>Enjuagar delicadamente con <br /> abundante agua. </p>
+            </article>
+            <article className="flex flex-col gap-2 relative left-[4.3rem]">
+              <h2 className="text-2xl font-medium">Paso 04</h2>
+              <p>Repetir la aplicación si es <br /> necesario. </p>
+            </article>
           </section>
         </section>
-        <section className="flex items-center justify-center w-[70rem] h-[40rem] mb-20">
-          <article className="w-[50%]">
-            <img src={PurpleRenew} alt="" />
-          </article>
-          <article className="w-[50%] relative left-[5rem]">
-            <h2 className="text-4xl font-medium text-primary-30 mb-8">
-              Precauciones <br /> de Renew
-            </h2>
-            <p className="w-[80%] text-primary-30">
-              Para uso externo únicamente. Evitar el contacto con los ojos y/o
-              membranas mucosas, en caso de contacto lave con abundante agua, si
-              observa alguna reacción desfavorable suspenda su uso temporalmente
-              y en caso de que persista consulte a su médico. Mantenga fuera del
-              alcance de los niños, almacene en un lugar seco y fresco protegido
-              de la luz directa del sol.
-            </p>
-          </article>
-        </section>
-        {/* pregntas */}
-        <section className="container mx-auto p-5 flex items-center justify-center gap-3">
-          <article className="w-[50%] relative bottom-[18rem] left-[19rem]">
-            <h2 className="static text-4xl font-semibold text-primary-20">Resolvemos tus <br /> dudas</h2>
-          </article>
-          <article className="w-[50%] flex flex-col items-center justify-center gap-4">
-            <Acordeon secciones={secciones} />
-          </article>
+        {/* foto */}
+        <section className="w-[50%]">
+          <img src={DetailPart} alt="" />
         </section>
       </div>
     </div>
   );
 };
 
-export default RenewItems;
+export default TonicItems;
