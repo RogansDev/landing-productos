@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ButtomComponent = ({ text, icon, color, size, className }) => {
 
@@ -11,7 +12,7 @@ const ButtomComponent = ({ text, icon, color, size, className }) => {
   };
 
   return (
-    <button
+    <Link
     variant="contained"
     color={color}
     size={size}
@@ -22,7 +23,7 @@ const ButtomComponent = ({ text, icon, color, size, className }) => {
   >
     <icon name={icon} />
     {text}
-  </button>
+  </Link>
   );
 };
 

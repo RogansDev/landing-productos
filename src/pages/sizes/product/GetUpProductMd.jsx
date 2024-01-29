@@ -5,7 +5,7 @@ import ButtomComponent from "../../../components/ButtomComponent";
 
 const GetUpProductMd = () => {
   return (
-    <div className="h-auto mx-auto overflow-hidden">
+    <div className="h-auto mx-auto container p-2 overflow-hidden relative right-3">
       <div className="mb-6">
         <img
           src={Banner}
