@@ -11,3 +11,7 @@ para los colores de las landing
 7. 20 = 47CCB7 = LANDING DE PRODUCTO ELIXIR
 8. 30 = "2694B5" = LANDING DE PRODUCTO  ROGER
 9. 40 = F08080 = LANDING DE PRODCUTO GET UP
+
+=> iconos <=
+   #F08080
+>

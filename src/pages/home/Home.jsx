@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import ElixirModal from "../modals/Elixir";
+import GetUpModal from "../modals/GetUp";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,7 +36,7 @@ const Home = () => {
           >
             Get up
           </Link>
-          {isModalOpen && <ElixirModal onClose={closeOpen} />}
+          {/* {isModalOpen && <GetUpModal onClose={closeOpen} />} */}
         </article>
         <article className="border-2 border-sky-500 w-1/2 h-24 rounded-md bg-blue-200">
         <Link
