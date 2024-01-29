@@ -5,8 +5,6 @@ import Logo from "../../../../public/img/logoby.png";
 import Banner from "../../../../public/img/saludsex2.jpg";
 
 const GetUpProductLg = () => {
-
-
   return (
     <div className="md:flex hidden items-center gap-8 mx-auto container relative left-20 top-5">
       <section className="flex items-center justify-center">
@@ -177,7 +175,7 @@ const GetUpProductLg = () => {
               />
               <label
                 htmlFor=""
-                className="flex flex-col bg-white h-6 px-3 absolute top-[35.5rem] left-[52rem] text-primary-40"
+                className="flex flex-col bg-white h-5 px-3 absolute top-[24.5rem] left-[39rem] text-primary-40"
               >
                 Selecciona una fecha
               </label>
