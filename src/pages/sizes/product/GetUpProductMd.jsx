@@ -5,7 +5,7 @@ import ButtomComponent from "../../../components/ButtomComponent";
 
 const GetUpProductMd = () => {
   return (
-    <div className=" overflow-hidden">
+    <div className="h-auto mx-auto overflow-hidden">
       <div className="mb-6">
         <img
           src={Banner}
@@ -172,12 +172,7 @@ const GetUpProductMd = () => {
                 type="datetime-local"
                 className="border border-slate-400 py-3 rounded-md  w-[400px]"
               />
-              <label
-                htmlFor=""
-                className="flex flex-col bg-white h-5 px-3 absolute top-[24.5rem] left-[39rem] text-primary-40"
-              >
-                Selecciona una fecha
-              </label>
+             
             </section>
             <div className="flex items-center gap-2">
               <input type="checkbox" name="" id="" className="" />
@@ -251,6 +246,7 @@ const GetUpProductMd = () => {
             <p className="text-[14px]">¿Quiéres saber más sobre Elixir?</p>
           </Link>
         </section>
+        <span className="h-4"></span>
       </section>
     </div>
   );
