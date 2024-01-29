@@ -2,6 +2,7 @@ import React from "react";
 import DetailPart from "../../../../public/img/detailParttwo.jpg";
 import DownBanner from "../../../../public/img/pie-img.jpg";
 import { GetImgLg, IngreImg } from "../../../theme/img";
+import { Link } from "react-router-dom";
 
 const GetUpLg = () => {
   const {
@@ -141,10 +142,10 @@ const GetUpLg = () => {
       <header className="mb-20">
         {/* banner */}
         <section>
-          <img src={Banner} alt="" className="w-full" />
+          <img src={Banner} alt="" className="w-auto p-8" />
         </section>
         {/* titulo y texto del banner*/}
-        <section className="flex flex-col items-center justify-between p-8  rounded-md absolute top-[19rem]">
+        <section className="flex flex-col items-center justify-between p-8  rounded-md absolute top-[20rem] left-[3rem]">
           <article className="relative bottom-[19rem] right-[4rem]">
             <svg
               width="142"
@@ -195,7 +196,7 @@ const GetUpLg = () => {
             <p className="font-semibold text-xl leading-7 mb-6">
               Afrodisiaco para <br /> hombres
             </p>
-            <button className="flex items-center justify-center gap-4 bg-black py-3 px-4 rounded-md text-white w-[17rem]">
+            <Link to="https://rogansya.com/checkout/" className="flex items-center justify-center cursor-pointer gap-4 bg-black py-3 px-4 rounded-md text-white w-[17rem]">
               <svg
                 width="21"
                 height="20"
@@ -235,11 +236,11 @@ const GetUpLg = () => {
                 />
               </svg>
               Adquiérelo ahora
-            </button>
+            </Link>
           </article>
         </section>
         {/* categoria de items */}
-        <section className="flex items-center justify-center gap-6 relative bottom-5 mb-6">
+        <section className="flex items-center justify-center gap-6 relative bottom-[3.5rem] mb-6">
           <article className="rounded-t-lg bg-white w-[40rem] h-[8rem] flex items-center justify-between gap-4 shadow-lg p-5">
             <section className="flex items-center justify-center gap-4">
               <svg
@@ -342,7 +343,7 @@ const GetUpLg = () => {
           </article>
           <article>
             <p className="text-xl font-semibold relative top-[3rem]">
-              Obtén una asesoría <br /> gratis en tu primera compra
+               Único  producto con asesoría  <br />médica sexual en tu primera compra
             </p>
           </article>
         </section>
@@ -369,33 +370,33 @@ const GetUpLg = () => {
       </div>
       {/* seccion de banner secondario */}
       <div className="mx-auto p-5 relative ">
-        <img src={SeccionBanner} alt="" className="object-cover" />
+        <img src={SeccionBanner} alt="" className="object-cover w-full h-[30rem]" />
       </div>
       {/* seccion de fotos */}
-      <div className="flex items-center gap-4 p-5 relative bottom-[4rem] m-5">
+      <div className="flex items-center gap-4 p-5 relative bottom-[4rem] left-[9.5rem] m-5">
         <section className="relative ">
-          <img src={ScreenFirst} alt="" />
+          <img src={ScreenFirst} alt="" className="w-[19rem]"/>
           <h2 className="absolute bottom-9 left-7 text-white text-2xl font-400">
             Mejora de la <br /> disfunción eréctil
           </h2>
         </section>
         <section className="relative">
-          <img src={ScreenSecond} alt="" />
+          <img src={ScreenSecond} alt="" className="w-[19rem]"/>
           <h2 className="absolute bottom-9 left-7 text-white text-2xl font-400">
             Mejora del rendimiento <br /> físico y energía
           </h2>
         </section>
         <section className="relative">
-          <img src={ScreenThrid} alt="" />
+          <img src={ScreenThrid} alt="" className="w-[19rem]"/>
           <h2 className="absolute bottom-9 left-7 text-white text-2xl font-400">
             Incremento en la <br /> resistencia sexual
           </h2>
         </section>
       </div>
       {/* adquierelo ya */}
-      <div className="relative bottom-9 left-[2rem] mb-20">
+      <Link to="https://rogansya.com/checkout/" className="relative bottom-9 left-[2rem] mb-20">
         <img src={BannerFoot} alt="banner-adqierele-ya" />
-      </div>
+      </Link>
       {/* los ingredientes */}
       <section className="mb-20  w-full h-[37rem] ">
         {/* <img src={DownBanner} alt="" /> transform rotate-45 animate-spin*/}

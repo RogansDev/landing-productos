@@ -11,14 +11,14 @@ const Elixir = () => {
     <div className="mx-auto container p-2 h-auto overflow-hidden font-poppins">
       <div className="flex items-center relative p-4 m-4">
         <section className="flex items-center justify-center w-[50%]">
-          <img src={Banner} alt="" className="object-cover" />
+          <img src={Banner} alt="" className="object-cover h-[37rem]" />
           <img
             src={Logo}
             alt=""
             className="object-cover absolute bottom-8 right-[66rem]"
           />
         </section>
-        <section className="flex  flex-col items-center justify-center bg-white text-black w-[50%] p-2 rounded">
+        <section className="flex  flex-col items-center justify-center bg-white text-black w-[50%] p-5 rounded">
           {/* titulo y subtitulo */}
           <section className="flex flex-col items-center justify-center mb-4">
             <h1 className="uppercase text-7xl font-medium text-secondary-20 tracking-[2px]">

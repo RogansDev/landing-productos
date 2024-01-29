@@ -61,7 +61,7 @@ const GetUpProductMd = () => {
             />
             <label
               htmlFor=""
-              className="flex flex-col bg-white h-6 px-3 absolute -top-3 left-5 text-black"
+              className="flex flex-col  h-6 px-3 absolute -top-3 left-5 text-black bg-red-500"
             >
               Celular / Telefono
             </label>

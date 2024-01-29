@@ -8,26 +8,26 @@ const GetUpProductLg = () => {
 
 
   return (
-    <div className="md:flex hidden items-center relative p-4 m-4">
+    <div className="md:flex hidden items-center gap-8 mx-auto container relative left-20 top-5">
       <section className="flex items-center justify-center">
-        <img src={Banner} alt="" className="object-cover" />
+        <img src={Banner} alt="" className="object-cover h-[38rem]" />
         <img
           src={Logo}
           alt=""
-          className="object-cover absolute bottom-8 right-[66rem] h-30"
+          className="object-cover absolute bottom-8 right-[59rem] h-30"
         />
       </section>
-      <section className="flex flex-col items-center justify-center bg-white text-black w-[50%] p-2 rounded">
+      <section className="flex flex-col items-center justify-center bg-white text-black  p-2 rounded">
         {/* titulo y subtitulo */}
         <section className="flex flex-col items-center justify-center mb-4">
-          <h1 className="uppercase text-7xl font-medium text-secondary-40 tracking-[2px]">
+          <h1 className="uppercase text-5xl font-medium text-secondary-40 tracking-[2px]">
             Get up
           </h1>
           <p className="text-primary-30">Shampoo anti caída y anti caspa</p>
         </section>
         {/* categoria */}
         <section className="flex flex-col items-center text-center">
-          <h2 className="font-medium text-3xl mb-2">
+          <h2 className="font-medium text-xl mb-2">
             Descubre las ventajas de una <br /> orientación médica con Rogans
           </h2>
           <div className="flex items-center justify-center text-center gap-4">
@@ -128,7 +128,7 @@ const GetUpProductLg = () => {
         <section className="flex flex-col gap-3 mx-auto p-5">
           <form
             action=""
-            className="flex flex-col items-center justify-center gap-8"
+            className="flex flex-col items-center justify-center gap-3 "
           >
             {/* inout normal */}
             <section className="relative flex flex-col">
@@ -138,9 +138,9 @@ const GetUpProductLg = () => {
               />
               <label
                 htmlFor=""
-                className="flex flex-col bg-white h-6 px-2 absolute -top-3 left-5"
+                className="flex flex-col bg-white h-6 px-2 absolute -top-3 left-5 text-primary-40"
               >
-                nombres
+                Nombre completo (Requerido)
               </label>
             </section>
             {/* email */}
@@ -151,9 +151,9 @@ const GetUpProductLg = () => {
               />
               <label
                 htmlFor=""
-                className="flex flex-col bg-white h-6 px-2 absolute -top-3 left-5"
+                className="flex flex-col bg-white h-6 px-2 absolute -top-3 left-5 text-primary-40"
               >
-                correo
+                Correo
               </label>
             </section>
             {/* celular */}
@@ -164,7 +164,7 @@ const GetUpProductLg = () => {
               />
               <label
                 htmlFor=""
-                className="flex flex-col bg-white h-6 px-2 absolute -top-3 left-5"
+                className="flex flex-col bg-white h-6 px-2 absolute -top-3 left-5 text-primary-40"
               >
                 Celular / Telefono
               </label>
@@ -177,12 +177,12 @@ const GetUpProductLg = () => {
               />
               <label
                 htmlFor=""
-                className="flex flex-col bg-white h-6 px-3 absolute -top-3 left-5 text-black"
+                className="flex flex-col bg-white h-6 px-3 absolute top-[35.5rem] left-[52rem] text-primary-40"
               >
-                Celular / Telefono
+                Selecciona una fecha
               </label>
             </section>
-            <div className="flex items-center gap-2 mb-2 mt-2">
+            <div className="flex items-center gap-2">
               <input type="checkbox" name="" id="" className="w-4 h-4" />
               <article className="text-sm text-slate-700">
                 Acepto los{" "}

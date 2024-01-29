@@ -7,6 +7,7 @@ import Items1 from "../../../../public/img-md/get-up/items1.jpg";
 import Items2 from "../../../../public/img-md/get-up/items2.jpg";
 import Items3 from "../../../../public/img-md/get-up/items3.jpg";
 import { IngreImgMd } from "../../../theme/img";
+import { Link } from "react-router-dom";
 
 const GetUpMd = () => {
   const { NaranjaMd, CocoMd, AzucarMd, AloeveraMd, GotaMd } = IngreImgMd;
@@ -103,33 +104,7 @@ const GetUpMd = () => {
         </svg>
       ),
     },
-    {
-      id: 5,
-      name: "Maca Prebióticos",
-      icon: (
-        <svg
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="0.447266"
-            y="6.5"
-            width="9.19222"
-            height="9.19222"
-            rx="1"
-            transform="rotate(-45 0.447266 6.5)"
-            fill="#404040"
-          />
-        </svg>
-      ),
-    },
-    {
-      id: 6,
-      name: "Palasitone",
-    },
+    
   ];
 
   const questions = [
@@ -594,7 +569,7 @@ const GetUpMd = () => {
           {/* seccion de items y banner secondario */}
           <section>
             <article className="flex items-center gap-5 p-2 mb-4">
-              <img src={SexImg} alt="" />
+              <img src={SexImg} alt="" className="h-[145px]  relative left-2"/>
               <h2 className="text-2xl text-secondary-40 ">
                 Revitaliza tu <br /> vida Íntima con <br /> Get Up
               </h2>
@@ -602,13 +577,13 @@ const GetUpMd = () => {
             <article className="flex items-center justify-center gap-4 mb-4">
               <section>
                 <img src={Items1} alt="" className="h-[168px]" />
-                <h2 className="absolute bottom-[19rem] left-6  text-xl text-white">
+                <h2 className="absolute bottom-[20.4rem] left-7  text-xl text-white">
                   Mejora de la <br /> disfunción <br /> eréctil
                 </h2>
               </section>
               <section>
-                <img src={Items2} alt="" />
-                <h2 className="absolute bottom-[19rem] left-[15rem] text-xl text-white">
+                <img src={Items2} alt="" className="rounded-[13px]"/>
+                <h2 className="absolute bottom-[20.4rem] left-[15rem] text-xl text-white">
                   Incremento en <br /> la resistencia <br /> sexual
                 </h2>
               </section>
@@ -626,9 +601,9 @@ const GetUpMd = () => {
           {/* texto y bottom adquierelo ya */}
           <section className="flex items-center justify-between p-4">
             <h2 className="text-2xl font-semibold w-[50%]">
-              Obtén una asesoría gratis en tu primera compra.
+               Único  producto con asesoría  <br />médica sexual en tu primera compra
             </h2>
-            <button className="py-2 text-sm bg-black rounded-md w-[12rem] text-white flex items-center justify-center gap-2 relative top-[2.5rem]">
+            <Link to="https://rogansya.com/checkout/"  className="py-2 text-sm bg-black rounded-md w-[12rem] text-white flex items-center justify-center gap-2 relative top-[2.5rem]">
               <svg
                 width="21"
                 height="20"
@@ -668,11 +643,11 @@ const GetUpMd = () => {
                 />
               </svg>
               Adquiérelo ahora
-            </button>
+            </Link>
           </section>
           {/* banner */}
           <section className="mb-20">
-            <img src={Banner2} alt="" />
+            <img src={Banner2} alt="" className="p-4"/>
           </section>
           <section className="mb-20 w-full h-[37rem]">
             <section>
@@ -709,6 +684,7 @@ const GetUpMd = () => {
                   {ingredientes.map((ing) => (
                     <section className="flex flex-grow  items-center justify-center gap-3">
                       <span className="block">{ing.name}</span>
+                      <span>{ing.icon}</span>
                     </section>
                   ))}
                 </article>
@@ -719,7 +695,7 @@ const GetUpMd = () => {
           <section className="flex flex-col items-center justify-center gap-4">
              {questions.map((quest) => (
                 <article className="flex items-start gap-4 p-2 w-auto " key={quest.id}>
-                    <span>{quest.name}</span>
+                    <span className="w-[96%] text-center text-sm">{quest.name}</span>
                 </article>
              ))}
              <span className="h-20"></span>
