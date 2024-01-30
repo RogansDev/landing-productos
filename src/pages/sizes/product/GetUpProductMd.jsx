@@ -5,7 +5,7 @@ import ButtomComponent from "../../../components/ButtomComponent";
 
 const GetUpProductMd = () => {
   return (
-    <div className="h-auto mx-auto container p-2 overflow-hidden relative right-3">
+    <div className="mx-auto container p-2 ">
       <div className="mb-6">
         <img
           src={Banner}
@@ -191,7 +191,7 @@ const GetUpProductMd = () => {
           </form>
         </section>
          {/* sobre mas informacion */}
-         <section className="flex items-center justify-around gap-7">
+         <section className="flex items-center justify-around gap-2 p.3">
           <Link className="flex items-center justify-center gap-2">
             <svg
               width="20"
@@ -243,7 +243,7 @@ const GetUpProductMd = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <p className="text-[14px]">¿Quiéres saber más sobre Elixir?</p>
+            <p className="text-[11px]">¿Quiéres saber más sobre Elixir?</p>
           </Link>
         </section>
         <span className="h-4"></span>

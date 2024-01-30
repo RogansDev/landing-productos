@@ -14,7 +14,11 @@ const GetUpLg = () => {
     ScreenSecond,
     ScreenThrid,
   } = GetImgLg;
+
+
   const { Naranja, Coco, Aloevera, Azucar, Gota, GotaC, GotaIz } = IngreImg;
+
+  
   const ingredientes = [
     {
       id: 1,

@@ -1,8 +1,6 @@
-import React from "react";
-import Banner from "../../../../../public/img-md/get-up/modalmd.png";
-import { Link } from "react-router-dom";
+import React from 'react'
 
-const ModalGetUpMd = ({ onClose }) => {
+const ModalRenewMd = () => {
   return (
     <div className="fixed inset-0 flex items-center justify-center font-poppins">
     <div className="relative bg-white  p-2 rounded shadow-lg">
@@ -145,7 +143,7 @@ const ModalGetUpMd = ({ onClose }) => {
       </section>
     </div>
   </div>
-  );
-};
+  )
+}
 
-export default ModalGetUpMd;
+export default ModalRenewMd;
