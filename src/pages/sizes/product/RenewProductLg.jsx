@@ -1,33 +1,34 @@
 import React from "react";
-import Banner from "../../../../public/img/getup-back.jpg";
 import { Link } from "react-router-dom";
 import ButtomComponent from "../../../components/ButtomComponent";
+import Logo from "../../../../public/img/logoby.png";
+import Banner from "../../../../public/img/renew2.jpg";
 
-const GetUpProductMd = () => {
+const RenewProductLg = () => {
   return (
-    <div className="mx-auto container p-2 ">
-      <div className="mb-6">
+    <div className="md:flex hidden items-center gap-8  relative left-20 top-5 h-100vh">
+      <section className="flex items-center justify-center">
+        <img src={Banner} alt="" className="object-cover h-[38rem]" />
         <img
-          src={Banner}
+          src={Logo}
           alt=""
-          className="h-[20rem] w-[27rem] object-cover p-3 rounded-[13px]"
+          className="object-cover absolute bottom-8 right-[59rem] h-30"
         />
-      </div>
-      <section className="flex flex-col items-center justify-center">
-        {/* titulo */}
-        <section className="flex flex-col items-center justify-center mb-4">
-          <h1 className="uppercase text-5xl font-medium text-secondary-40 tracking-[2px]">
-            Get up
+      </section>
+      <section className="flex flex-col items-center justify-center bg-white text-black  p-2 rounded">
+        {/* titulo y subtitulo */}
+        <section className="flex flex-col items-center justify-center mb-2">
+          <h1 className="uppercase text-5xl font-medium text-primary-30 tracking-[2px]">
+            Renew
           </h1>
           <p className="text-primary-30">Shampoo anti caída y anti caspa</p>
         </section>
-        {/* subtitulo */}
+        {/* categoria */}
         <section className="flex flex-col items-center text-center">
           <h2 className="font-medium text-xl mb-2">
             Descubre las ventajas de una <br /> orientación médica con Rogans
           </h2>
-          {/* categoria */}
-          <div className="flex items-center  text-center gap-2 p-3">
+          <div className="flex items-center justify-center text-center gap-4">
             <span className="flex items-center gap-1">
               <svg
                 width="20"
@@ -58,7 +59,7 @@ const GetUpProductMd = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-              <p className="text-sm">Libre de costos</p>
+              <p>Libre de costos</p>
             </span>
             <span className="flex items-center gap-2">
               <svg
@@ -92,7 +93,7 @@ const GetUpProductMd = () => {
               </svg>
               <p>Telemedicina</p>
             </span>
-            <span className="flex items-center ">
+            <span className="flex items-center gap-2">
               <svg
                 width="20"
                 height="20"
@@ -122,16 +123,16 @@ const GetUpProductMd = () => {
           </div>
         </section>
         {/* formulario */}
-        <section className="flex flex-col gap-3 p-5">
+        <section className="flex flex-col gap-3 mx-auto p-5">
           <form
             action=""
-            className="flex flex-col items-center justify-center gap-3 "
+            className="flex flex-col items-center justify-center gap-4 "
           >
             {/* inout normal */}
             <section className="relative flex flex-col">
               <input
                 type="text"
-                className="border border-slate-400 py-3 rounded-md  w-[400px]"
+                className="border border-slate-400 py-3 rounded-md  w-[440px]"
               />
               <label
                 htmlFor=""
@@ -144,7 +145,7 @@ const GetUpProductMd = () => {
             <section className="relative flex flex-col">
               <input
                 type="text"
-                className="border border-slate-400 py-3 rounded-md  w-[400px]"
+                className="border border-slate-400 py-3 rounded-md  w-[440px]"
               />
               <label
                 htmlFor=""
@@ -157,7 +158,7 @@ const GetUpProductMd = () => {
             <section className="relative flex flex-col">
               <input
                 type="text"
-                className="border border-slate-400 py-3 rounded-md  w-[400px]"
+                className="border border-slate-400 py-3 rounded-md  w-[440px]"
               />
               <label
                 htmlFor=""
@@ -170,12 +171,17 @@ const GetUpProductMd = () => {
             <section className="">
               <input
                 type="datetime-local"
-                className="border border-slate-400 py-3 rounded-md  w-[400px]"
+                className="border border-slate-400 py-3 rounded-md  w-[440px]"
               />
-             
+              <label
+                htmlFor=""
+                className="flex flex-col bg-white h-5 px-3 absolute top-[24.5rem] left-[39rem] text-primary-40"
+              >
+                Selecciona una fecha
+              </label>
             </section>
             <div className="flex items-center gap-2">
-              <input type="checkbox" name="" id="" className="" />
+              <input type="checkbox" name="" id="" className="w-4 h-4" />
               <article className="text-sm text-slate-700">
                 Acepto los{" "}
                 <Link className="text-black ">términos y condiciones</Link>
@@ -186,12 +192,12 @@ const GetUpProductMd = () => {
               icon="check"
               color="green"
               size="lg"
-              className="bg-secondary-40 py-3 px-4 rounded-md text-white"
+              className="bg-primary-30 py-3 px-4 rounded-md text-white"
             />
           </form>
         </section>
-         {/* sobre mas informacion */}
-         <section className="flex items-center justify-around gap-2 p.3">
+        {/* sobre mas informacion */}
+        <section className="flex items-center justify-around gap-7">
           <Link className="flex items-center justify-center gap-2">
             <svg
               width="20"
@@ -216,7 +222,7 @@ const GetUpProductMd = () => {
             <p>¿Tienes dudas?</p>
           </Link>
           <Link
-            to="/GetupDetails"
+            to="/RenewDetails"
             className="flex items-center justify-center gap-2"
           >
             <svg
@@ -243,13 +249,12 @@ const GetUpProductMd = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <p className="text-[11px]">¿Quiéres saber más sobre Elixir?</p>
+            <p>¿Quiéres saber más sobre Elixir?</p>
           </Link>
         </section>
-        <span className="h-4"></span>
       </section>
     </div>
   );
 };
 
-export default GetUpProductMd;
+export default RenewProductLg;

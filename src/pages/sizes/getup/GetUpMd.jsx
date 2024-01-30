@@ -1,10 +1,10 @@
 import React from "react";
 import Banner from "../../../../public/img/bannerMd.jpg";
-import SexImg from "../../../../public/img-md/get-up/banner-2.jpg";
+import SexImg from "../../../../public/img-md/get-up/itemsmd1.jpg";
 import Banner2 from "../../../../public/img-md/get-up/banner-pareja.jpg";
 import BannerHeader from "../../../../public/img-md/get-up/bannerheader.jpg";
 import Items1 from "../../../../public/img-md/get-up/items1.jpg";
-import Items2 from "../../../../public/img-md/get-up/items2.jpg";
+import Items2 from "../../../../public/img-md/get-up/itemsmd3.png";
 import Items3 from "../../../../public/img-md/get-up/items3.jpg";
 import { IngreImgMd } from "../../../theme/img";
 import { Link } from "react-router-dom";

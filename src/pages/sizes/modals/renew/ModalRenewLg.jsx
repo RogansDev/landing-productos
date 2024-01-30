@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import Banner from "../../../../../public/img/renew.jpg";
 
-const ModalRenewLg = () => {
+const ModalRenewLg = ({ onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center font-poppins">
       <div className="relative bg-white p-2 rounded shadow-md">
@@ -142,7 +144,7 @@ const ModalRenewLg = () => {
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ModalRenewLg
+export default ModalRenewLg;
